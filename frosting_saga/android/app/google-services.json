@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "589586038641",
+    "project_id": "frostingsaga",
+    "storage_bucket": "frostingsaga.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589586038641:android:1298adfbe6e055fead00d0",
+        "android_client_info": {
+          "package_name": "com.example.frosting_saga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589586038641-k8k7nb5csmqh5ahrf19s4hfurfncflcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnZ4LFWhi3960D4QM0Rjx9-Y6rb-6oFZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589586038641-k8k7nb5csmqh5ahrf19s4hfurfncflcr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
