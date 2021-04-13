@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   firebase_core: "0.7.0"
   firebase_auth: "^0.20.1"
+  google_sign_in: "^4.5.1"
+#flutter_facebook_auth: "^1.0.0"
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -48,7 +50,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/images/FS_Banner.jpeg
+   - assets/google_logo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -62,12 +64,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+  fonts:
+    - family: Hind
+      fonts:
+        - asset: fonts\Hind-Bold.ttf
+        - asset: fonts\Hind-Light.ttf
+        - asset: fonts\Hind-Medium.ttf
+        - asset: fonts\Hind-Regular.ttf
+        - asset: fonts\Hind-SemiBold.ttf
+    - family: Exo
+      fonts:
+        - asset: fonts\Exo-Italic-VariableFont_wght.ttf
+        - asset: fonts\Exo-VariableFont_wght.ttf
+#         style: italic
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

@@ -46,7 +46,7 @@ class LandingPage extends StatelessWidget {
                       child: Stack(
                     children: [
                       CircularProgressIndicator(),
-                      Text("Checkin Authentiaction"),
+                      Text("Checking Authentiaction"),
                     ],
                   )),
                 );
