@@ -12,11 +12,13 @@ class _LoginPageState extends State<LoginPage> {
     MediaQueryData deviceInfo = MediaQuery.of(context);
     Size a = deviceInfo.size;
     double devHeight = a.height;
+
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Stack(
+            alignment: Alignment.center,
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.only(
@@ -35,9 +37,38 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Column(
                 children: [
-                  Text("Welcome to ,"),
-                  Text("Frosting Saga"),
-                  Text("Every Cake has a Story to Tell!!")
+                  Text(
+                    "Welcome to ,",
+                    style: TextStyle(
+                      fontFamily: "Exo",
+                      fontWeight: FontWeight.w800,
+                      fontSize: 30.0,
+                      color: Colors.pink[400],
+                    ),
+                  ),
+                  Text(
+                    "Frosting Saga",
+                    style: TextStyle(
+                      shadows: [Shadow(blurRadius: 7.0, color: Colors.amber)],
+                      fontFamily: "Exo",
+                      fontWeight: FontWeight.w800,
+                      fontSize: 38.0,
+                      color: Colors.yellowAccent[100],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(0.02 * devHeight),
+                    child: Text(
+                      "Every Cake has a Story to Tell!!",
+                      style: TextStyle(
+                        fontFamily: "Exo",
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16.0,
+                        wordSpacing: 7.0,
+                        color: Colors.pink,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ],

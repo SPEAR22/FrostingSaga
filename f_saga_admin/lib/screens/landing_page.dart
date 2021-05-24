@@ -1,3 +1,4 @@
+import 'package:f_saga_admin/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -21,13 +22,7 @@ class LandingPage extends StatelessWidget {
         }
 
         if (snapshot.connectionState == ConnectionState.done) {
-          return Scaffold(
-            body: Container(
-              child: Center(
-                child: Text("Intialized"),
-              ),
-            ),
-          );
+          return HomePage();
         }
 
         return Scaffold(
@@ -37,7 +32,6 @@ class LandingPage extends StatelessWidget {
             ),
           ),
         );
-        ;
       },
     );
   }
