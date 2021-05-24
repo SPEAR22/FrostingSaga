@@ -2,7 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:frosting_saga/screens/home_page.dart';
-import 'package:frosting_saga/screens/login_page.dart';
+import 'package:frosting_saga/screens/onboarding/walkthrough.dart';
+//import 'package:frosting_saga/screens/login_page.dart';
+
 
 class LandingPage extends StatelessWidget {
   // Create the initialization Future outside of `build`:
@@ -36,7 +38,7 @@ class LandingPage extends StatelessWidget {
                 if (streamSnapshot.connectionState == ConnectionState.active) {
                   User _user = streamSnapshot.data;
                   if (_user == null) {
-                    return LoginPage();
+                    return WalkThrough();
                   } else {
                     return HomePage();
                   }
